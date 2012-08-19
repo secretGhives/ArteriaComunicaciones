@@ -368,7 +368,7 @@ transform: translateZ(-50px);
 }
 
 #title div .name {
-background-image: url(/img/logo.png);
+background-image: url(../img/logo.png);
 background-repeat:no-repeat;
 background-size:contain;
 text-indent: -9999px;
