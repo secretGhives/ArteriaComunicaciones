@@ -232,22 +232,7 @@ display: inline-block;
 position: absolute;
 bottom: 9px;
 right: 9px;
-font-size: 6px;
-}
-
-.pretty::after, .pretty::before {
-margin-top: 3px;
-content: "";
-float: left;
-border: 9px solid white;
-}
-
-.pretty:after {
-border-right-color:transparent;
-}
-
-.pretty:before {
-border-left-color:transparent;
+font-size: 11px;
 }
 
 .pretty a:link, .pretty a:visited { 
