@@ -1,0 +1,74 @@
+/* SLIMBOX */
+
+#lbOverlay {
+position: fixed;
+z-index: 9999;
+left: 0; right: 0;
+top: 0; bottom: 0;
+width: 100%; height: 100%;
+background-color: #fff;
+cursor: pointer;
+margin: 0; padding: 0;
+}
+
+#lbCenter { z-index: 9999; }
+#lbBottomContainer {
+background: #fff;
+bottom: auto; top: 3px;
+left: auto; right: 3px;
+position: absolute;
+z-index: 9999;
+}
+#lbCenter,
+#lbImage,
+#lbNav {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0; bottom: 0;
+left: 0; right: 0;
+margin: 0; padding: 0;
+}
+
+.lbLoading {
+background: #fff url(../img/loading.gif) no-repeat center;
+}
+
+#lbImage {
+background: center center fixed no-repeat;
+-webkit-background-size: contain;
+-moz-background-size: contain;
+-o-background-size: contain;
+background-size: contain;
+}
+
+
+#lbPrevLink, #lbNextLink {
+display: block;
+position: absolute;
+top: 0; bottom: 0;
+width: 50%;
+outline: none;
+}
+
+#lbPrevLink { left: 0; right: 50%; }
+#lbPrevLink:hover { cursor:w-resize; }
+#lbNextLink { right: 0; left: 50%; }
+#lbNextLink:hover { cursor:e-resize; }
+
+#lbBottom { }
+
+#lbCloseLink {
+display: inline-block;
+width: 22px;
+height: 22px;
+border-right: 1px solid #eee;
+outline: none;
+vertical-align: middle;
+line-height: 22px;
+text-align: center;
+}
+#lbCloseLink:hover { background: pink; }
+#lbCaption, #lbNumber { display: inline-block; vertical-align: middle; margin: 0 0.6em; }
+#lbCaption { font-weight: bold; }
+#lbNumber { font-size: 0.7em; color: #999; }
