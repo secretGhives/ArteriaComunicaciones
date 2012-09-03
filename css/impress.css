@@ -6,12 +6,7 @@ body     { pointer-events: auto; }
 
 body {
 min-height: 740px;
-background: rgb(215, 215, 215);
-background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+background: #e11b13;
 
 -webkit-font-smoothing: antialiased;
 background-size: cover;
@@ -19,72 +14,17 @@ background-repeat: no-repeat;
 transition: background 1s;
 }
 
-.impress-on-home {
-background: rgb(214,249,255);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(214,249,255,1) 0%, rgba(158,232,250,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(214,249,255,1)), color-stop(100%,rgba(158,232,250,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', endColorstr='#9ee8fa',GradientType=1 );
-}
+.impress-on-home {background: #00aafa;}
 
-.impress-on-filosofia {
-background: rgb(255,214,94);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(255,214,94,1) 0%, rgba(254,191,4,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,214,94,1)), color-stop(100%,rgba(254,191,4,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 );
-}
+.impress-on-filosofia {background: #a1aab3;}
 
-.impress-on-services {
-background: rgb(210,255,82);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(210,255,82,1)), color-stop(100%,rgba(145,232,66,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=1 );
-}
+.impress-on-services {background: #ff8600;}
 
-.impress-on-portfolio {
-background: rgb(241,231,103);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(241,231,103,1)), color-stop(100%,rgba(254,182,69,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=1 );
-}
+.impress-on-portfolio {background: #a04291;}
 
-.impress-on-about {
-background: rgb(73,155,234);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(32,124,229,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 );
-}
+.impress-on-about {background: #dcff9e;}
 
-.impress-on-contacts {
-background: rgb(255,255,255);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 );
-
-}
+.impress-on-contacts {background: #a1e7ff;}
 
 /* COMMON STEP STYLES */
 
@@ -109,9 +49,7 @@ box-sizing:         border-box;
 transition:         opacity 1s;
 }
 
-.step:not(.active) {
-opacity: 0.3;
-}
+.step:not(.active) {opacity: 0;}
 
 .step h1 {}
 
@@ -362,6 +300,8 @@ margin-top: 32px;
 #home blockquote {
 background: #FCF49E;
 padding: 32px;
+max-width: 203px;
+float: right;
 }
 #home-quote strong {
 font-size: 11px;
@@ -374,7 +314,12 @@ position: absolute;
 bottom: 0;
 right: -121px;
 }
-
+#home-text p {
+font-size: 16px;
+}
+#home-text strong {
+font-size: 18px;
+}
 
 
 /*
@@ -442,7 +387,7 @@ transform: translateY(-0.6em) translateZ(50px);
 * FOLOSOFIA STEP
 * =============================================================================
 */
-
+#filosofia {padding: 0;}
 #filosofia h1 {
 background: white;
 padding: 0 9px;
@@ -458,6 +403,7 @@ overflow: hidden;
 padding: 13px;
 box-shadow: 1px 1px 0 #BBB;
 margin-top: 0;
+text-align: justify;
 }
 
 #filosofia .span3 strong {
@@ -474,6 +420,7 @@ margin-top: 9px;
 
 #services {
 margin-bottom: 20px;
+padding: 0;
 }
 
 #services a{
@@ -522,25 +469,6 @@ padding: 3px 13px;
 margin: 2em auto 3em;
 vertical-align: top;
 }
-.ribbon:before, .ribbon:after {
-content: "";
-position: absolute;
-display: block;
-bottom: -3px;
-border: 11px solid #986794;
-z-index: -1;
-}
-.ribbon::before {
-left: -16px;
-border-right-width: 13px;
-border-left-color: transparent;
-}
-.ribbon:after {
-right: -16px;
-border-left-width: 13px;
-border-right-color: transparent;
-}
-
 
 
 
@@ -571,15 +499,21 @@ margin-top: 32px;
 #about blockquote {
 background: #FCF49E;
 padding: 32px;
+max-width: 203px;
+float: right;
 }
 #about-quote strong {
 font-size: 11px;
-margin: 6px;
+margin: 6px 32px;
 text-align: right;
 display: block;
 }
-
-
+#about-text p {
+font-size: 16px;
+}
+#about-text strong {
+font-size: 18px;
+}
 
 
 

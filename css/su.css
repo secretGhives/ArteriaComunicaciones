@@ -42,6 +42,7 @@ body { font-family: sans-serif; background-position: 0; background-size: cover; 
 .impress-on-overview { background: url(/img/bg1.jpg); }
 */
 
+.step:not(.active) {opacity: 0 !important;}
 
 /*////////////////////////////////////////////
 // TITLE/LOGO SECTION
