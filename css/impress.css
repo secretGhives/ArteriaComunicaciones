@@ -6,7 +6,7 @@ body     { pointer-events: auto; }
 
 body {
 min-height: 740px;
-background: #e11b13;
+background: #eee;
 
 -webkit-font-smoothing: antialiased;
 background-size: cover;
@@ -14,17 +14,82 @@ background-repeat: no-repeat;
 transition: background 1s;
 }
 
-.impress-on-home {background: #00aafa;}
+.impress-on-title {
+background: #a90329;
+background: -moz-radial-gradient(center, ellipse cover,  #a90329 0%, #8f0222 44%, #6d0019 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019));
+background: -webkit-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: -o-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: radial-gradient(ellipse at center,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+}
 
-.impress-on-filosofia {background: #a1aab3;}
+.impress-on-home {
+background: #4096ee;
+background: -moz-radial-gradient(center, ellipse cover,  #4096ee 0%, #3c42e8 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4096ee), color-stop(100%,#3c42e8));
+background: -webkit-radial-gradient(center, ellipse cover,  #4096ee 0%,#3c42e8 100%);
+background: -o-radial-gradient(center, ellipse cover,  #4096ee 0%,#3c42e8 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #4096ee 0%,#3c42e8 100%);
+background: radial-gradient(ellipse at center,  #4096ee 0%,#3c42e8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#3c42e8',GradientType=1 );
+}
 
-.impress-on-services {background: #ff8600;}
+.impress-on-filosofia {
+background: #cedce7;
+background: -moz-radial-gradient(center, ellipse cover,  #cedce7 0%, #596a72 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+background: -webkit-radial-gradient(center, ellipse cover,  #cedce7 0%,#596a72 100%);
+background: -o-radial-gradient(center, ellipse cover,  #cedce7 0%,#596a72 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #cedce7 0%,#596a72 100%);
+background: radial-gradient(ellipse at center,  #cedce7 0%,#596a72 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 );
+}
 
-.impress-on-portfolio {background: #a04291;}
+.impress-on-services {
+background: #fcc050;
+background: -moz-radial-gradient(center, ellipse cover,  #fcc050 0%, #f97c0e 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fcc050), color-stop(100%,#f97c0e));
+background: -webkit-radial-gradient(center, ellipse cover,  #fcc050 0%,#f97c0e 100%);
+background: -o-radial-gradient(center, ellipse cover,  #fcc050 0%,#f97c0e 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #fcc050 0%,#f97c0e 100%);
+background: radial-gradient(ellipse at center,  #fcc050 0%,#f97c0e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc050', endColorstr='#f97c0e',GradientType=1 );
+}
 
-.impress-on-about {background: #dcff9e;}
+.impress-on-portfolio {
+background: #e570e7;
+background: -moz-radial-gradient(center, ellipse cover,  #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e570e7), color-stop(47%,#c85ec7), color-stop(100%,#a849a3));
+background: -webkit-radial-gradient(center, ellipse cover,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+background: -o-radial-gradient(center, ellipse cover,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+background: radial-gradient(ellipse at center,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=1 );
+}
 
-.impress-on-contacts {background: #a1e7ff;}
+.impress-on-about {
+background: #d2ff52;
+background: -moz-radial-gradient(center, ellipse cover,  #d2ff52 0%, #44ed3b 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#d2ff52), color-stop(100%,#44ed3b));
+background: -webkit-radial-gradient(center, ellipse cover,  #d2ff52 0%,#44ed3b 100%);
+background: -o-radial-gradient(center, ellipse cover,  #d2ff52 0%,#44ed3b 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #d2ff52 0%,#44ed3b 100%);
+background: radial-gradient(ellipse at center,  #d2ff52 0%,#44ed3b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#44ed3b',GradientType=1 );
+}
+
+.impress-on-contacts {
+background: #a9e4f7;
+background: -moz-radial-gradient(center, ellipse cover,  #a9e4f7 0%, #0fb4e7 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a9e4f7), color-stop(100%,#0fb4e7));
+background: -webkit-radial-gradient(center, ellipse cover,  #a9e4f7 0%,#0fb4e7 100%);
+background: -o-radial-gradient(center, ellipse cover,  #a9e4f7 0%,#0fb4e7 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #a9e4f7 0%,#0fb4e7 100%);
+background: radial-gradient(ellipse at center,  #a9e4f7 0%,#0fb4e7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=1 );
+}
 
 /* COMMON STEP STYLES */
 
