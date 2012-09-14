@@ -26,6 +26,16 @@
 	<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
+<img src="img/push-space.png" id="title-icon">
+<img src="img/logo.png" class="step-logo">
+
+<div id="icon-home" class="side-icon"><i class="icon-home"></i></div>
+<div id="icon-filosofia" class="side-icon"><i class="icon-heart"></i></div>
+<div id="icon-services" class="side-icon"><i class="icon-bookmark"></i></div>
+<div id="icon-portfolio" class="side-icon"><i class="icon-file"></i></div>
+<div id="icon-about" class="side-icon"><i class="icon-star"></i></div>
+<div id="icon-contact" class="side-icon"><i class="icon-comment"></i></div>
+
 <div id="impress">
 		 
 	<!-- Welcome -->
@@ -34,7 +44,6 @@
 			<span class="welcome">bienvenidos a</span>
 			<span class="name">Arteria Comunicaciones</span>
 		</div>
-		<img src="img/push-space.png" alt="" id="title-icon">
 	</div>
 
 	<!-- Home -->
@@ -59,8 +68,6 @@
 				<p>“Siendo una empresa líder en un nuestro campo, no habíamos posicionado la marca en el nicho de mercado que buscábamos, gracias a ustedes vemos un resultado diferente al momento de captar clientes” – Aerotour</p>
 			 </blockquote>
 		</div>
-
-		<img src="img/logo.png" class="step-logo">
 	</div>
 
 	<!-- Filosofy -->
@@ -103,7 +110,6 @@
 		</div>
 		<img src="img/boxes.png" id="imgBoxes">
 		<img src="img/flower.png" id="imgFlower">
-		<img src="img/logo.png" class="step-logo">
 	</div>
 
 	<!-- Services -->
@@ -164,7 +170,6 @@
 				</ul>
 			</div>
 		</div>
-		<img src="img/logo.png" class="step-logo">
 	</div>
 
 	<!-- Portfolio -->
@@ -202,7 +207,6 @@
 		<li>Pedregal</li>
 		<li>Aerotour</li>
 		</ul>
-		<img src="img/logo.png" class="step-logo">
 	</div>
 
 	<!-- About -->
@@ -227,7 +231,6 @@
 				<p>“Promociones, estrategias y muchas ideas locas pero efectivas han sido parte del día a día con esta gente, realmente son nuestros aliados” – Casinos Europa</p>
 			 </blockquote>
 		</div>
-		<img src="img/logo.png" class="step-logo">
 	</div>
 
 	<!-- Contacts -->
@@ -281,7 +284,6 @@
 				</fieldset>
 			</form>
 		</div>
-		<img src="img/logo.png" class="step-logo">
 	</div>
 
 	<!-- <div class="step" data-scale="3" data-x="0" data-y="0" id="overview"></div> -->
@@ -289,8 +291,13 @@
 </div>
 
 <div class="hint">
-		<p>Use a spacebar or arrow keys to navigate</p>
+    <p>Use a spacebar or arrow keys to navigate</p>
 </div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
 
 <div class='pretty'>
 		<a href='#title'><span>Bienvenido</span></a>
@@ -316,7 +323,7 @@ if ("ontouchstart" in document.documentElement) {
 <script>
 $(function(){
 	// Stuff to do as soon as the DOM is ready;
-	impress();
+	impress().init();
 
 	$('.realshadow').realshadow({
 		// followMouse: false
