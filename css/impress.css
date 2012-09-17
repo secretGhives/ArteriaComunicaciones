@@ -1,0 +1,1194 @@
+/* enable clicking on elements 'hiding' behind body in 3D */
+body     { pointer-events: auto; line-height: 1; }
+#impress { pointer-events: auto; }
+
+/* Spacebar image */
+#title-icon {position: absolute;bottom: -42px;right: 49%;width: 96px;}
+.step-logo {position: absolute; width:222px; left: 42px;bottom: 42px;}
+
+/* COMMON STEP STYLES */
+
+body {
+min-height: 740px;
+background: #eee;
+
+-webkit-font-smoothing: antialiased;
+background-size: cover;
+background-repeat: no-repeat;
+transition: background 1s;
+}
+
+.impress-on-title {
+background: #a90329;
+background: -moz-radial-gradient(center, ellipse cover,  #a90329 0%, #8f0222 44%, #6d0019 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019));
+background: -webkit-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: -o-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: radial-gradient(ellipse at center,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+}
+.impress-on-title .step-logo {display: none;}
+
+.impress-on-home {
+background: #4096ee;
+background: -moz-radial-gradient(center, ellipse cover,  #4096ee 0%, #3c42e8 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4096ee), color-stop(100%,#3c42e8));
+background: -webkit-radial-gradient(center, ellipse cover,  #4096ee 0%,#3c42e8 100%);
+background: -o-radial-gradient(center, ellipse cover,  #4096ee 0%,#3c42e8 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #4096ee 0%,#3c42e8 100%);
+background: radial-gradient(ellipse at center,  #4096ee 0%,#3c42e8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#3c42e8',GradientType=1 );
+}
+.impress-on-home .step-logo {}
+.impress-on-home #icon-home {display: inline-block;}
+
+.impress-on-filosofia {
+background: #cedce7;
+background: -moz-radial-gradient(center, ellipse cover,  #cedce7 0%, #596a72 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+background: -webkit-radial-gradient(center, ellipse cover,  #cedce7 0%,#596a72 100%);
+background: -o-radial-gradient(center, ellipse cover,  #cedce7 0%,#596a72 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #cedce7 0%,#596a72 100%);
+background: radial-gradient(ellipse at center,  #cedce7 0%,#596a72 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 );
+}
+.impress-on-filosofia #icon-filosofia {display: inline-block;}
+
+.impress-on-services {
+background: #fcc050;
+background: -moz-radial-gradient(center, ellipse cover,  #fcc050 0%, #f97c0e 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fcc050), color-stop(100%,#f97c0e));
+background: -webkit-radial-gradient(center, ellipse cover,  #fcc050 0%,#f97c0e 100%);
+background: -o-radial-gradient(center, ellipse cover,  #fcc050 0%,#f97c0e 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #fcc050 0%,#f97c0e 100%);
+background: radial-gradient(ellipse at center,  #fcc050 0%,#f97c0e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc050', endColorstr='#f97c0e',GradientType=1 );
+}
+.impress-on-services #icon-services {display: inline-block;}
+
+.impress-on-portfolio {
+background: #e570e7;
+background: -moz-radial-gradient(center, ellipse cover,  #e570e7 0%, #c85ec7 47%, #a849a3 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e570e7), color-stop(47%,#c85ec7), color-stop(100%,#a849a3));
+background: -webkit-radial-gradient(center, ellipse cover,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+background: -o-radial-gradient(center, ellipse cover,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+background: radial-gradient(ellipse at center,  #e570e7 0%,#c85ec7 47%,#a849a3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=1 );
+}
+.impress-on-portfolio #icon-portfolio {display: inline-block;}
+
+.impress-on-about {
+background: #d2ff52;
+background: -moz-radial-gradient(center, ellipse cover,  #d2ff52 0%, #44ed3b 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#d2ff52), color-stop(100%,#44ed3b));
+background: -webkit-radial-gradient(center, ellipse cover,  #d2ff52 0%,#44ed3b 100%);
+background: -o-radial-gradient(center, ellipse cover,  #d2ff52 0%,#44ed3b 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #d2ff52 0%,#44ed3b 100%);
+background: radial-gradient(ellipse at center,  #d2ff52 0%,#44ed3b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#44ed3b',GradientType=1 );
+}
+.impress-on-about #icon-about {display: inline-block;}
+
+.impress-on-contacts {
+background: #a9e4f7;
+background: -moz-radial-gradient(center, ellipse cover,  #a9e4f7 0%, #0fb4e7 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a9e4f7), color-stop(100%,#0fb4e7));
+background: -webkit-radial-gradient(center, ellipse cover,  #a9e4f7 0%,#0fb4e7 100%);
+background: -o-radial-gradient(center, ellipse cover,  #a9e4f7 0%,#0fb4e7 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #a9e4f7 0%,#0fb4e7 100%);
+background: radial-gradient(ellipse at center,  #a9e4f7 0%,#0fb4e7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=1 );
+}
+.impress-on-contacts #icon-contact {display: inline-block;}
+
+
+.side-icon {display: none;width: 69px;height: 69px;background: rgba(255, 255, 255, 0.32);position: absolute;top: 69px;left: 0;border-radius: 0 13px 13px 0;}
+
+/* COMMON STEP STYLES */
+
+.step {
+width: 900px;
+padding: 42px;
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing:    border-box;
+-ms-box-sizing:     border-box;
+-o-box-sizing:      border-box;
+box-sizing:         border-box;
+}
+
+/* fade out inactive slides */
+
+.step {
+-webkit-transition: opacity 1s;
+-moz-transition:    opacity 1s;
+-ms-transition:     opacity 1s;
+-o-transition:      opacity 1s;
+transition:         opacity 1s;
+}
+
+.step:not(.active) {opacity: 0;}
+
+.step h1 {}
+
+.step small {
+display: block;
+margin-bottom: 13px;
+color: #666;
+}
+
+/* STEP SPECIFIC STYLES */
+
+/* hint on the first slide */
+
+.hint {
+position: fixed;
+left: 0;
+right: 0;
+bottom: 200px;
+
+background: rgba(0,0,0,0.5);
+color: #EEE;
+text-align: center;
+
+font-size: 50px;
+padding: 20px;
+
+z-index: 100;
+
+opacity: 0;
+
+-webkit-transform: translateY(400px);
+-moz-transform:    translateY(400px);
+-ms-transform:     translateY(400px);
+-o-transform:      translateY(400px);
+transform:         translateY(400px);
+
+-webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+-moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+-ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+-o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+#title + .hint {
+opacity: 1;
+
+-webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
+-moz-transition:    opacity 1s 5s,    -moz-transform 0.5s;
+-ms-transition:     opacity 1s 5s,     -ms-transform 0.5s;
+-o-transition:      opacity 1s 5s,      -o-transform 0.5s;
+transition:         opacity 1s 5s,         transform 0.5s;
+
+-webkit-transform: translateY(0px);
+-moz-transform:    translateY(0px);
+-ms-transform:     translateY(0px);
+-o-transform:      translateY(0px);
+transform:         translateY(0px);
+}
+
+
+/* overview step */
+
+#overview {
+z-index: -1;
+padding: 0;
+}
+
+/* on overview step everything is visible */
+
+#impress.step-overview .step {
+opacity: 1;
+cursor: pointer;
+}
+
+/*
+* SLIDE STEP STYLES
+*
+* inspired by: http://html5slides.googlecode.com/svn/trunk/styles.css
+*
+* ;)
+*/
+
+.slide {
+display: block;
+
+width: 900px;
+height: 700px;
+
+padding: 40px 60px;
+
+border-radius: 10px;
+
+background-color: white;
+
+box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+border: 1px solid rgba(0, 0, 0, .3);
+
+/* font-family: 'PT Sans', Arial, sans-serif; */
+
+color: rgb(102, 102, 102);
+text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+font-size: 36px;
+line-height: 42px;
+
+letter-spacing: -1px;
+}
+
+.slide q {
+display: block;
+font-size: 50px;
+line-height: 72px;
+
+margin-top: 100px;
+}
+
+.slide q strong {
+white-space: nowrap;
+}
+
+
+/* IMPRESS NOT SUPPORTED STYLES */
+
+.fallback-message {
+font-family: 'PT Sans', sans-serif;
+line-height: 1.3;
+
+display: none;
+width: 780px;
+padding: 10px 10px 0;
+margin: 20px auto;
+
+border-radius: 10px;
+border: 1px solid #E4C652;
+background: #EEDC94;
+}
+
+.fallback-message p {
+margin-bottom: 10px;
+}
+
+.impress-not-supported .step {
+position: relative;
+opacity: 1;
+margin: 20px auto;
+}
+
+.impress-not-supported .fallback-message {
+display: block;
+}
+
+
+.step p {
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+font-size: 13px;
+line-height: normal;
+}
+
+.step .highlight {
+padding: 5px;
+font-size: 24px;
+font-family: monospace;
+line-height: 1.0;
+
+-webkit-border-radius: 5px;
+-moz-border-radius:    5px;
+-ms-border-radius:     5px;
+-o-border-radius:      5px;
+border-radius:         5px;
+}
+
+.step ol,
+.step ul {
+margin-left: 1.5em;
+list-style-type: circle;
+}
+
+
+/*
+* NAV MENU STEP
+* =============================================================================
+*/
+
+.pretty {
+display: inline-block;
+position: absolute;
+bottom: 9px;
+right: 9px;
+font-size: 11px;
+}
+
+.pretty a:link, .pretty a:visited { 
+color:#000;
+text-decoration:none;
+float:left;
+overflow:hidden;
+}
+
+.pretty span {
+background:#fff;
+display:inline-block;
+line-height:3em;
+padding:0 1em;
+margin-top:0.5em;
+position:relative;
+
+-webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+-moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+-ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+-o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.pretty a:hover span {
+background:#FFD204;
+margin-top:0;
+}
+
+.pretty span:before {
+content: "";
+position:absolute;
+top:3em;
+left:0;
+border-right:0.5em solid #9B8651;
+border-bottom:0.5em solid #fff;
+}
+
+.pretty span:after {
+content: "";
+position:absolute;
+top:3em;
+right:0;
+border-left:0.5em solid #9B8651;
+border-bottom:0.5em solid #fff;
+}
+
+
+
+
+/*
+* HOME STEP
+* =============================================================================
+*/
+#home-quote {
+margin-top: 32px;
+}
+#home blockquote {
+background: #FCF49E;
+padding: 32px;
+}
+#home-quote strong {
+font-size: 11px;
+margin: 6px 32px;
+text-align: right;
+display: block;
+}
+#home .step-logo {
+position: absolute;
+bottom: -69px;
+left: 55px;
+width: 333px;
+}
+#home-text {
+color: #FAFCFF;
+}
+#home-text p {
+font-size: 22px;
+}
+#home-text strong {
+font-size: 24px;
+}
+
+#home small {
+text-align: center;
+margin-top: 8px;
+font-size: 17px;
+color: #EDFAFF;
+display: block;
+margin-bottom: 27px;
+}
+#home h1 {
+color: #FFD600;
+font-size: 42px;
+text-align: center;
+}
+
+
+/*
+* TITLE STEP
+* =============================================================================
+*/
+
+#impress.step-title .step { opacity: 0.1; }
+
+#impress.step-title .active { opacity: 1; }
+
+@keyframes rotate-h1 {
+0%   { transform: perspective(1000px) rotateY(-10deg); }
+100% { transform: perspective(1000px) rotateY(10deg); }
+}
+
+#title {
+-webkit-transform: translateZ(20px);
+-moz-transform:    translateZ(20px);
+-ms-transform:     translateZ(20px);
+-o-transform:      translateZ(20px);
+transform:         translateZ(20px);
+}
+
+#title #title-icon {
+position: absolute;
+bottom: -309px;
+left: 55%;
+width: 112px;
+}
+
+#title div {
+font-weight: bold;
+text-align: center;
+font-size: 6em;
+line-height: 1;
+
+transform-style: preserve-3d;
+animation: rotate-h1 2s infinite alternate ease-in-out;
+
+transform: perspective(1000px) rotateY(0deg);
+
+transition: all 2s ease-in-out;
+}
+
+#title div .welcome {
+text-transform: lowercase;
+display: inline-block;
+font-weight: normal;
+font-size: 42px;
+transform: translateZ(-50px);
+color: #FC8686;
+}
+
+#title div .name {
+background-image: url(../img/logo.png);
+background-repeat:no-repeat;
+background-size:contain;
+text-indent: -9999px;
+transform: translateZ(20px);
+display: block;
+width: 581px;
+}
+
+#title div .subtext {
+display: inline-block;
+font-weight: normal;
+font-size: 0.6em;
+transform: translateY(-0.6em) translateZ(50px);
+}
+
+/*
+* FOLOSOFIA STEP
+* =============================================================================
+*/
+#filosofia {padding: 0;}
+#filosofia h1 {
+background: white;
+padding: 0 9px;
+border-bottom: 1px solid #333;
+}
+
+#filosofia .span3 p {
+background-color: white;
+border-color: #DDD;
+border-style: solid;
+border-width: 1px 0 0 1px;
+overflow: hidden;
+padding: 13px;
+box-shadow: 1px 1px 0 #BBB;
+margin-top: 0;
+text-align: justify;
+}
+
+#filosofia .span3 strong {
+display: block;
+margin-top: 9px;
+}
+
+#filosofia #imgBoxes {
+position: absolute;
+top: -181px;
+left: -181px;
+z-index: -1;
+}
+#filosofia #imgFlower {
+position: absolute;
+bottom: -106px;
+right: -144px;
+z-index: -1;
+}
+#filosofia .step-logo {
+position: absolute;
+top: -140px;
+right: 0;
+width: 616px;
+}
+
+/*
+* SERVICES STEP
+* =============================================================================
+*/
+
+
+#services {
+margin-bottom: 20px;
+padding: 0;
+}
+
+#services a{
+text-decoration: none;
+color: #666666;
+}
+
+#services a:hover{
+color: #000000;
+}
+
+#services h6 {
+color: #F1F1F1;
+margin-bottom: 10px;
+}
+
+
+#services .span3 {
+background: -moz-linear-gradient(top,  rgba(232, 152, 152, 0) 0%,rgba(255, 195, 125, 1) 6%,rgba(255, 255, 255, 0) 100%);
+background: -webkit-linear-gradient(top, rgba(232, 152, 152, 0) 0%,rgba(255, 195, 125, 1) 6%,rgba(255, 255, 255, 0) 100%);
+background: -o-linear-gradient(top,  rgba(232, 152, 152, 0) 0%,rgba(255, 195, 125, 1) 6%,rgba(255, 255, 255, 0) 100%);
+background: -ms-linear-gradient(top,  rgba(232, 152, 152, 0) 0%,rgba(255, 195, 125, 1) 6%,rgba(255, 255, 255, 0) 100%);
+background: linear-gradient(to bottom,  rgba(232, 152, 152, 0) 0%,rgba(255, 195, 125, 1) 6%,rgba(255, 255, 255, 0) 100%);
+}
+
+#services ul li {
+border-bottom: 1px dashed #DF903A;
+padding: 3px 0px;
+list-style-type: none;
+font-size: 19px;
+line-height: 1.3;
+color: #454D5E;
+padding-right: 15px;
+}
+
+#services ul li:last-child{
+border-bottom: none;
+}
+
+.ribbon {
+font-size: 14px !important;
+line-height: 16px;
+position: relative;
+background: #BA89B6;
+color: white;
+text-align: center;
+padding: 3px 13px;
+margin: 2em auto 3em;
+vertical-align: top;
+}
+#services .step-logo {
+position: absolute;
+right: 0;
+bottom: 99px;
+width: 420px;
+}
+
+
+/*
+* PORTFOLIO STEP
+* =============================================================================
+*/
+#portfolio { text-align: center;}
+
+#portfolio li {
+background: white;
+margin: 3px;
+padding: 6px 9px;
+border: 1px solid #C2C2C2;
+list-style-type: none;
+display: inline-block;
+}
+#portfolio .step-logo {
+position: absolute;
+top: -91px;
+left: 112px;
+width: 323px;
+}
+
+#portfolio #imgClients {background: white; margin-top: 81px;}
+#portfolio h1 {color: #FFC200;}
+
+/*
+* ABOUT STEP
+* =============================================================================
+*/
+#about-quote {
+margin-top: 32px;
+}
+#about blockquote {
+background: #FCF49E;
+padding: 32px;
+}
+#about-quote strong {
+font-size: 11px;
+margin: 6px 32px;
+text-align: right;
+display: block;
+}
+#about-text p {
+font-size: 16px;
+}
+#about-text strong {
+font-size: 18px;
+}
+#about .step-logo {
+position: absolute;
+top: -91px;
+right: 0;
+width: 420px;
+}
+
+
+
+/*
+* CONTACT STEP
+* =============================================================================
+*/
+#contacts {max-width: 666px;}
+
+#contacts .step-logo {
+position: absolute;
+top: -130px;
+left: 0px;
+width: 666px;
+}
+
+#contacts-content {
+margin: 42px;
+}
+
+#contacts img {
+position: absolute;
+bottom: -3px;
+right: 22px;
+}
+
+/* This is the selector of the seventh box, here's where we establish the measures, background colors, borders and shadows */
+.box7 {
+padding: 0 0 1px 0;
+background: white;
+border-top: 1px solid #CCC;
+border-right: 1px solid #CCC;
+border-left: 1px solid #CCC;
+box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* This is the top left tape */
+.box7:before{
+content: '';
+position:absolute;
+width: 130px;
+height: 30px;
+border-left: 1px dashed rgba(0, 0, 0, 0.1);
+border-right: 1px dashed rgba(0, 0, 0, 0.1);
+background: rgba(0, 0, 0, 0.1);
+background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
+background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
+-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+-webkit-transform:translate(-50px,10px)
+  skew(10deg,10deg)
+  rotate(-50deg);
+-moz-transform:translate(-50px,10px)
+  skew(10deg,10deg)
+  rotate(-50deg);
+-o-transform:translate(-50px,10px)
+  skew(10deg,10deg)
+  rotate(-50deg);
+transform:translate(-50px,10px)
+  skew(10deg,10deg)
+  rotate(-50deg);
+}
+
+/* This is the top bottom right tape */
+.box7:after{
+content: '';
+position:absolute;
+right:0;
+bottom:0;
+width: 130px;
+height: 30px;
+background: rgba(0, 0, 0, 0.1);
+background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
+background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
+border-left: 1px dashed rgba(0, 0, 0, 0.1);
+border-right: 1px dashed rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+-webkit-transform: translate(50px,-20px)
+  skew(10deg,10deg)
+  rotate(-50deg);
+-moz-transform: translate(50px,-20px)
+  skew(10deg,10deg)
+  rotate(-50deg);
+-o-transform: translate(50px,-20px)
+  skew(10deg,10deg)
+  rotate(-50deg);
+transform: translate(50px,-20px)
+  skew(10deg,10deg)
+  rotate(-50deg)
+}
+
+
+
+
+/* Additional Styles */
+.skewed {
+    display: inline-block;
+    font: 2em/1 impact, sans-serif;
+    margin-top: 5em;
+    position: relative;
+    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+       -moz-transform: rotate(-10deg) skew(-10deg, 0);
+        -ms-transform: rotate(-10deg) skew(-10deg, 0);
+         -o-transform: rotate(-10deg) skew(-10deg, 0);
+            transform: rotate(-10deg) skew(-10deg, 0);
+}
+.skewed:after,
+.skewed:before {
+    background: #666;
+    box-shadow: inset 0 0 0 .5em #666,
+                inset 0 .7em 0 #666,
+                inset 0 .9em 0 #888,
+                inset 0 1.4em 0 #666,
+                inset 0 1.6em 0 #888,
+                inset 0 2.1em 0 #666,
+                inset 0 2.3em 0 #888,
+                inset 0 2.5em 0 #666;
+    content: '';
+    height: 3em;
+    position: absolute;
+    top: 0em;
+    width: 3.5em;
+    z-index: -1;
+}
+.skewed:after {
+    border-radius: .25em 0 0 .25em;
+    left: -2.5em;
+}
+.skewed:before {
+    border-radius: 0 .25em .25em 0;
+    right: -2.5em;
+}
+.skewed span {
+    background: #666;
+    box-shadow: 0 0 0 .2em #ffe;
+    color: #ffe;
+    padding: 1em;
+    position: relative;
+    text-shadow: 1px 2px 0 #666,
+                 2px 3px 0 #888;
+    text-transform: uppercase;
+}
+
+/* **********************************************
+ *  3 Different Depths
+ *   ********************************************** */
+.front {
+    z-index: 100;
+    top: 30px;
+}
+
+.front p {
+    display: block;
+}
+
+.middle {
+    z-index: 50;
+    top: 50px;
+    -webkit-transform: scale(0.75) skewY(-13deg);
+    -moz-transform: scale(0.75) skewY(-13deg);
+    -ms-transform: scale(0.75) skewY(-13deg);
+    -o-transform: scale(0.75) skewY(-13deg);
+    transform: scale(0.75) skewY(-13deg);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.back {
+    z-index: 0;
+    top: 0;
+    -webkit-transform: scale(0.5) skewY(-13deg);
+    -moz-transform: scale(0.5) skewY(-13deg);
+    -ms-transform: scale(0.5) skewY(-13deg);
+    -o-transform: scale(0.5) skewY(-13deg);
+    transform: scale(0.5) skewY(-13deg);
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+}
+
+.middle, .back {
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    color: rgba(0, 0, 0, 0);
+}
+
+
+
+/* Notepad */
+.notepad {
+    background: #f6f6f6;
+    box-shadow: 0 1px 4px hsla(0,0%,0%,.25);
+    margin: 50px auto;
+    position: relative;
+    width: 492px;
+    background-image: -webkit-radial-gradient(#e6e6e6 21%, transparent 21%),
+                      -webkit-radial-gradient(hsla(0,0%,0%,.25) 21%, transparent 26%),
+                      -webkit-linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,0) 95%,
+                                                   hsla(180,25%,50%,.1) 95%, hsla(180,25%,50%,.1) 100%);
+    background-image: -moz-radial-gradient(#e6e6e6 21%, transparent 21%),
+                      -moz-radial-gradient(#e6e6e6 10%, transparent 12%),
+                      -moz-linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,0) 95%,
+                                                   hsla(180,25%,50%,.1) 95%, hsla(180,25%,50%,.1) 100%);
+    background-image: radial-gradient(#e6e6e6 21%, transparent 21%),
+                      radial-gradient(#e6e6e6 10%, transparent 12%), 
+                      linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,0) 95%,
+                                                   hsla(180,25%,50%,.1) 95%, hsla(180,25%,50%,.1) 100%);
+    background-position: 6px 6px, 6px 5px, 50% 18px;
+    background-repeat: repeat-y, repeat-y, repeat;
+    background-size: 48px 48px, 48px 48px, 24px 24px;
+    padding: 48px 24px 24px 84px;
+}
+.notepad:after {
+    border-left: 1px solid hsla(0,75%,50%,.2);
+    border-right: 1px solid hsla(0,75%,50%,.2);
+    bottom: 0;
+    content: '';
+    left: 58px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+.notepad:before {
+    bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 10px 10px hsla(0,0%,0%,.25);
+    content: '';
+    height: 100px;
+    max-width: 300px;
+    position: absolute;
+    right: 5px;
+    width: 300px;
+    z-index: -10; 
+    -webkit-transform: rotate(2deg);    
+       -moz-transform: rotate(2deg);   
+        -ms-transform: rotate(2deg);   
+         -o-transform: rotate(2deg);
+            transform: rotate(2deg);
+}
+.notepad p {
+    color: #333;
+    font: 16px/24px serif;
+    margin-bottom: 24px;
+}
+.notepad p:first-child:first-line {
+    font-variant: small-caps;
+}
+.notepad p:first-child:first-letter {
+    color: #444;
+    float: left;
+    font: bold 48px/48px UnifrakturCook, Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    padding-right: 12px;
+}
+.notepad ul {
+    color: #333;
+    font: italic 16px/24px serif;
+    line-height: 24px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+}
+
+
+
+/* SHADOWS */
+/*==================================================
+ *  * Effect 1
+ *   * ===============================================*/
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+/*==================================================
+ *  * Effect 2
+ *   * ===============================================*/
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ *  * Effect 3
+ *   * ===============================================*/
+.effect3
+{
+  position: relative;
+}
+.effect3:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/*==================================================
+ *  * Effect 4
+ *   * ===============================================*/
+.effect4
+{
+  position: relative;
+}
+.effect4:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}  
+
+/*==================================================
+ *  * Effect 5
+ *   * ===============================================*/
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ *  * Effect 6
+ *   * ===============================================*/
+.effect6
+{
+      position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect6:after
+{
+    right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ *  * Effect 7
+ *   * ===============================================*/
+.effect7
+{
+      position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect7:after
+{
+    right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ *  * Effect 8
+ *   * ===============================================*/
+.effect8
+{
+      position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect8:after
+{
+    right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}  
+
+
+
+
+/* PAPER */
+.paper {
+    background-color:#fff;
+    width:250px;
+    height:250px;
+    margin:25px auto;
+    font-family:Droid Sans;
+    color:#aaa;
+    border:1px solid #c2c0b8;
+    padding:20px;
+    -webkit-box-shadow:0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;
+    -moz-box-shadow:0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;
+    box-shadow:0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;
+}
+
+
+
